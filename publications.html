@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Publications</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" type="text/css" href="style/footer.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="sticky-top bd-example">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">JO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="about_me.html">About Me</a>
+          <a class="nav-item nav-link active" href="publications.html">Publications</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="page-container">
+    <div id="content-wrap">
+      <div style="margin:20px">
+        <div class="center">
+          <h2>Publications</h2>
+        </div>
+      </div>
+
+      <div class="center">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="figs/agere2020.png" class="card-img-top card-img" alt="agere2020" style="margin:20px"
+                width="5px">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Research Paper</h5>
+                <p class="card-text">Revisiting the Network Stack in CAF</p>
+                <p class="card-text"><small class="text-muted">November 2020</small></p>
+                <p><strong>Abstract</strong><br>
+                  Applications increasingly demand distribution across the global Internet. The Actor model of
+                  computation has been wisely designed to abstract communication between actors and hence remains
+                  transparent w.r.t. distribution. Performance, security, and deployment considerations, however, make
+                  it difficult to define a specific communication transport that should be hardcoded into an actor
+                  framework. It is rather desirable to design appropriate transport abstrac- tions, which allow for
+                  flexible choices and configurations of transport functions on the Internet.
+                  In this paper, we report about our ongoing work of redesigning, implementing, and evaluating a
+                  network stack that abstracts transport for the C++ Actor Framework (CAF). The stack allows for the
+                  exchanging of transport protocols and adds configuration options as well as compositions of protocols.
+                  First comparisons of TCP versus UDP with con- figurable reliability options are provided, as well as
+                  an early evaluation of its performance.
+                </p>
+                <a href="https://dl.acm.org/doi/10.1145/3427760.3428340" class="btn btn-dark">Access</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="figs/Bachelors.png" class="card-img-top card-img" alt="Bachelor_Thesis" style="margin:20px"
+                width="5px">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Bachelor Thesis</h5>
+                <p class="card-text">Redesigning and Evaluating the Network Stack in the C++ Actor Framework</p>
+                <p class="card-text"><small class="text-muted">July 2020</small></p>
+                <p><strong>Abstract</strong><br>
+                  Distributed programming relies heavily on communication over the Internet to enable the scaling and
+                  distribution of tasks across physical boundaries. The actuator model extends this by providing a
+                  network transparent communication model using messages. The C++ Actor Framework (CAF) is an
+                  implementation of the actor model that provides a network stack design that aims at a thorough
+                  transparent abstraction of the complicated network APIs. However, it is limited in both extensibility
+                  and composability, making it difficult to keep up with the ever-changing requirements for such a
+                  stack. New transport protocols such as Quick UDP Internet Connections (QUIC) or application protocols
+                  such as WebRTC would be good additions that cannot be integrated due to the current inflexible design.
+                  The work in this thesis reconsiders the current approach and proposes a new design for the abstraction
+                  of the network layer. This new approach will be finalized with respect to composability, reusability,
+                  and extensibility, thus creating a more flexible network abstraction for CAF. An implementation of the
+                  new design is used to show the capabilities and limitations, which allows assessing the value of the
+                  design for future work.</p>
+                <a href="files/bachelor_thesis_jakob_otto.pdf" download class="btn btn-dark">Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer class="bg-dark text-center text-lg-start" id="footer">
+      <a href="impressum.html"><span class="text-muted align-middle">Impressum</span></a>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/jquery-3.5.1.min.js"><\/script>')</script>
+  <script src="assets/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
